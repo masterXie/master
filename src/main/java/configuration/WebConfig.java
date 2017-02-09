@@ -38,4 +38,12 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 			.addResourceHandler("/views/page_js/**")
 			.addResourceLocations("/views/page_js/","classpath:/views/page_js/");
 	}
+	
+	@Bean
+	@Autowired
+	public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
+		HibernateTransactionManager htm=new HibernateTransactionManager();
+		htm.setSessionFactory(sessionFactory);
+		return htm;
+	}
 }
