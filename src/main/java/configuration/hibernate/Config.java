@@ -16,7 +16,7 @@ public class Config {
 	public SessionFactory sessionFactory(BasicDataSource dataSource) throws Exception{
 		AnnotationSessionFactoryBean sfb=new AnnotationSessionFactoryBean();
 		sfb.setDataSource(dataSource);
-		sfb.setPackagesToScan("master.entity");
+		sfb.setPackagesToScan("entity");
 		Properties props=new Properties();
 		props.setProperty("dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
 		sfb.setDataSource(dataSource);
