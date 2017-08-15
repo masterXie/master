@@ -2,7 +2,7 @@ package configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class MasterInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class MasterInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
